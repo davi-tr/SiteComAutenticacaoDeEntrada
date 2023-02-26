@@ -11,17 +11,21 @@ section{
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    background: #00ff00;
-    
+    background: url(/resources/941898.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .form-box {
     position: relative;
     width: 400px;
     height: 450px;
-    background: red;
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 0, a, 0);
+    border-radius: 5%;
 }
 
 h2{
@@ -64,28 +68,30 @@ top: -5px;
     color: #fff;
 }
 
+
 .inputbox ion-icon{
     position: absolute;
     right: 8px;
     color: #fff;
     font-size: 1.2em;
-    top: 2px;
+    top: 14px;
 }
 
 .forget{
-    margin: -15px e 15px;
+    margin: -15px 0 15px;
     font-size: .9em;
     color: #fff;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .forget label input {
     margin-right: 3px;
 }
 .forget label a {
+    padding: 10px;
     color: #fff;
-    text-decoration: underline;
+    text-decoration: none;
 }
 .forget label a:hover{
     text-decoration: underline;
@@ -101,6 +107,10 @@ outline: none;
 cursor: pointer;
 font-size: 1em;
 font-weight: 600;
+transition: .3s;
+}
+button:hover{
+    transform: scale(1.1);
 }
 
 .register{
@@ -116,4 +126,8 @@ margin: 25px 0 10px;
 }
 .register p a:hover{
     text-decoration: underline;
+}
+
+#check{
+    accent-color: green;
 }
